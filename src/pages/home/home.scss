@@ -1,0 +1,51 @@
+page-home {
+
+    ion-card {
+        position: relative;
+        text-align: center;
+      }
+
+      .card-subtitle1 {
+        font-size: 1.0em;
+        position: absolute;
+        top: 5%;
+        width: 100%;
+        color: #fff;
+      }
+    
+      .card-title {
+        position: absolute;
+        top: 25%;
+        font-size: 2.0em;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+      }
+    
+      .card-subtitle {
+        font-size: 1.0em;
+        position: absolute;
+        top:50%;
+        width: 100%;
+        color: #fff;
+      }
+
+      .chloc{
+        font-size: 1.0em;
+        position: absolute;
+        top: 80%;
+      //  width: 100%;
+        color: #fff;
+        
+      }
+
+      textarea { 
+          max-width: 100%;
+           width: 100%; 
+           height: 30vh; 
+        }
+
+     
+   
+
+}

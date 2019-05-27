@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-card>
+        <img src="assets/imgs/digital_world_184571.jpg"/>
+        <div class="card-subtitle1">Request to Review</div>    
+        <div class="card-title">Business Location</div>
+        <div class="card-subtitle">
+          1001 Marshall St. Second Floor<br>
+          Redwood City,CA94063
+        </div>
+        <button class="chloc" ion-button clear color="primary" round>Change Location</button>
+      </ion-card>
+
+      <form [formGroup]="credentialsForm">
+      <ion-list>
+          
+            <ion-item>
+              <ion-input type="text" [(ngModel)]=name [formControl]="credentialsForm.controls['name']" placeholder="Customer's full name">
+              </ion-input>
+            </ion-item>
+          
+            <ion-item style="width:25%;float:left">
+             <ion-input  type="text"  [formControl]="credentialsForm.controls['id']" placeholder="+91">
+               </ion-input></ion-item><ion-item style="width:60%;float:right">
+             <ion-input type="text"  [(ngModel)]=cont [formControl]="credentialsForm.controls['no']" placeholder="Customer's phone number">
+             </ion-input>
+            </ion-item>
+           <!-- <button ion-button><ion-icon style="float:right" name="heart"></ion-icon> </button>
+           -->
+          
+            <ion-item style="width:75%;float:left">
+            <ion-textarea maxlength="200" [(ngModel)]=msg [formControl]="credentialsForm.controls['msg']" placeholder="sample text"></ion-textarea>
+          </ion-item>
+         <!--  <ion-icon style="width:15%;float:right" name="heart"></ion-icon>-->
+          
+            <button ion-button clear  [disabled]="!credentialsForm.valid" full (click)="send()">Send Request</button>
+          </ion-list>
+
+        </form>
+
+
+</ion-content>
